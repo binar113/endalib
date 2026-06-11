@@ -1,4 +1,4 @@
-__lib__ = "endalib"
+__lib__ = "enda"
 __version__ = round((4+6) / 10, 2) # 4-количество локализованых функций, 6-количество не локализованых функций
 __author__ = "devenda"
 __license__ = "Apache 2.0"
@@ -35,7 +35,7 @@ def url(base="https://example.com"):
     
 def git():
     import webbrowser
-    webbrowser.open("https://github.com/binar113/enda")
+    webbrowser.open("https://github.com/binar113/endalib")
     
 def json(base={"Значение не присвоено": True}):
     import json
