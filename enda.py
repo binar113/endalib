@@ -1,14 +1,10 @@
-"""
-библиотека простая🤪
-"""
-
-__lib__ = "enda"
-__version__ = round((4+5) / 10, 2) # 4-количество локализованых функций, 4-количество не локализованых функций
+__lib__ = "endalib"
+__version__ = round((4+6) / 10, 2) # 4-количество локализованых функций, 6-количество не локализованых функций
 __author__ = "devenda"
 __license__ = "Apache 2.0"
 
 if __name__ == "__main__":
-    print("\aЭто библиотека, не недо выполнять её👍")
+    print("\aIt is library, dont execute this👍")
     input()
 
 
@@ -40,12 +36,15 @@ def url(base="https://example.com"):
 def git():
     import webbrowser
     webbrowser.open("https://github.com/binar113/enda")
-
+    
+def json(base={"Значение не присвоено": True}):
+    import json
+    print(json.dumps(base, ensure_ascii=False, indent=2))
 
 class ru:
     @staticmethod
     def info():
-        print(f"Версия enda: {__version__}\nАвтор: {__author__}")
+        print(f"Версия {__lib__}: {__version__}\nАвтор: {__author__}")
     
     @staticmethod
     def pause():
@@ -53,6 +52,7 @@ class ru:
 
     @staticmethod
     def exe():
+        print("Вводите команды на свой страх и риск! разработчик ответственности за введённые вами команды НЕ НЕСЁТ")
         while True:
             inpt = input(">>> ")
             if inpt == "exit":
@@ -69,10 +69,10 @@ class ru:
         print("Держи рикролл🤪")
         webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         
-class tr: # трасянка, смесь русского и беларусского(а тут ещё и латинкой)
+class by:
     @staticmethod
     def info():
-        print(f"Versija enda: {__version__}\nAutar: {__author__}")
+        print(f"Versija {__lib__}: {__version__}\nAutar: {__author__}")
 
     @staticmethod
     def pause():
@@ -80,6 +80,7 @@ class tr: # трасянка, смесь русского и беларусск�
 
     @staticmethod
     def exe():
+        print("uvadzite komandy na svoj strah i risk! razrabotchyk za uviedzienyje vami komandy NE NESIOT")
         while True:
             inpt = input(">>> ")
             if inpt == "exit":
@@ -99,7 +100,7 @@ class tr: # трасянка, смесь русского и беларусск�
 class en:
     @staticmethod
     def info():
-        print(f"Version of enda: {__version__}\nAuthor: {__author__}")
+        print(f"Version of {__lib__}: {__version__}\nAuthor: {__author__}")
 
     @staticmethod
     def pause():
@@ -107,6 +108,7 @@ class en:
 
     @staticmethod
     def exe():
+        print("Execute comands at your own risk! developer takes NO responsibility for entered commands.")
         while True:
             inpt = input(">>> ")
             if inpt == "exit":
